@@ -1,0 +1,98 @@
+body {
+    margin: 0;
+    font-family: 'Segoe UI', sans-serif;
+    background-color: #f2f2f2;
+    color: #333;
+  }
+  
+  .container {
+    max-width: 960px;
+    margin: 50px auto;
+    background-color: white;
+    padding: 40px;
+    border-radius: 16px;
+    box-shadow: 0 8px 24px rgba(0, 0, 0, 0.1);
+  }
+  
+  h1 {
+    text-align: center;
+    font-size: 2rem;
+    color: #222;
+    margin-bottom: 30px;
+  }
+  
+  .galeria {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 16px;
+    justify-content: center;
+    margin-top: 20px;
+  }
+  
+  .item-galeria {
+    width: calc(50% - 16px); /* duas por linha com gap */
+    box-sizing: border-box;
+    text-align: center;
+  }
+  
+  .item-galeria img {
+    width: 100%;
+    max-width: 100%;
+    height: auto;
+    border-radius: 8px;
+    transition: transform 0.3s ease;
+  }
+
+  .item-galeria img:hover {
+    transform: scale(1.05);
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.25);
+  }
+  
+  .descricao-imagem {
+    margin-top: 8px;
+    font-size: 0.9rem;
+    color: #444;
+  }
+  
+  p {
+    font-size: 1.1rem;
+    line-height: 1.6;
+    text-align: justify;
+  }
+  
+  .voltar {
+    display: inline-block;
+    margin-top: 30px;
+    background-color: #ff914d;
+    color: white;
+    padding: 12px 24px;
+    border: none;
+    border-radius: 8px;
+    text-decoration: none;
+    font-weight: bold;
+    transition: background-color 0.3s;
+  }
+  
+  .voltar:hover {
+    background-color: #e06e2c;
+  }
+  
+  /* Scroll bonito no Chrome */
+  .galeria::-webkit-scrollbar {
+    height: 8px;
+  }
+  
+  .galeria::-webkit-scrollbar-thumb {
+    background-color: #ccc;
+    border-radius: 4px;
+  }
+  
+  .galeria::-webkit-scrollbar-track {
+    background-color: transparent;
+  }
+
+  @media (max-width: 600px) {
+    .item-galeria {
+      width: 100%;
+    }
+  }

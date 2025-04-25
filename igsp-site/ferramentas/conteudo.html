@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Ferramenta - IGSP</title>
+  <link rel="stylesheet" href="conteudo.css" />
+</head>
+<body>
+    <div class="container">
+      <h1 id="titulo">Carregando...</h1>
+
+      <p id="texto">Por favor, aguarde o carregamento do conteúdo.</p>
+
+      <h3>Veja abaixo as experiências:</h3>
+
+      <div class="galeria" id="galeria">
+        <!-- Imagens aparecerão aqui -->
+      </div>
+  
+      <a class="voltar" href="../index.html#ferramentas">← Voltar para Ferramentas</a>
+    </div>
+  
+    <script>
+      const params = new URLSearchParams(window.location.search);
+      const tool = params.get("tool");
+  
+      const conteudos = {
+        "missoes": {
+          titulo: "Missões no Exterior",
+          texto: "As Missões no Exterior nada mais são do que a pregação do evangelho do reino em toda a terra habitada. Mateus 24:14 nos revela que o caminho para apressar o fim desta era e trazer nosso amado Senhor de volta é pregarmos o evangelho do reino por todo o mundo, a todas as nações. Portanto, com essa visão, enviamos missionários, pessoas que consagraram suas vidas para este propósito, a todos os países e continentes, apressando, assim, a segunda vinda de Cristo.",
+          imagens: [
+  {
+    src: "/ferramentas/img/missoes2.jpg",
+    descricao: "As Missões no Exterior nada mais são do que a pregação do evangelho do reino em toda a terra habitada. Mateus 24:14 nos revela que o caminho para apressar o fim desta era e trazer nosso amado Senhor de volta é pregarmos o evangelho do reino por todo o mundo, a todas as nações. "
+  },
+  {
+    src: "/ferramentas/img/missoes4.jpg",
+    descricao: "Abordei uma moça que ficou muito tocada e levou um livro."
+  },
+  {
+    src: "/ferramentas/img/missoes5.jpg",
+    descricao: "Abordei uma moça que ficou muito tocada e levou um livro."
+  },
+  {
+    src: "/ferramentas/img/missoes6.jpg",
+    descricao: "Abordei uma moça que ficou muito tocada e levou um livro."
+  },
+  // ... e assim por diante
+]
+        },
+        "casa-adolescentes": {
+          titulo: "Casa de Adolescentes",
+          texto: "A Casa de Adolescentes não é um lugar físico, mas um ambiente com uma esfera espiritual, um ambiente de cuidado espiritual e humano. Os adolescentes são levados a viverem a realidade da palavra, praticando, imergindo, transcrevendo, gerando amor e apreço pela palavra profética. A Casa de Adolescentes vem transformando a vida de muitos adolescentes e famílias e não vem de esforço humano, mas é a palavra que vem sendo trabalhada neles!",
+          imagens: [
+  {
+    src: "/ferramentas/img/casa01.jpg",
+    descricao: "Toda a casa reunida em um final de semana desfrutável!"
+  },
+  {
+    src: "/ferramentas/img/casa02.jpg",
+    descricao: "Vem e Vê alcançando adolescentes novos na zona leste de São Paulo."
+  },
+  {
+    src: "/ferramentas/img/casa05.jpg",
+    descricao: "Vem e Vê alcançando adolescentes novos na zona leste de São Paulo."
+  },
+  {
+    src: "/ferramentas/img/casa04.jpg",
+    descricao: "Saída do projeto Pães e Peixes!."
+  },
+  // ... e assim por diante
+]
+        },
+        "paes-e-peixes": {
+          titulo: "Pães e Peixes",
+          texto: "Através da leitura, o projeto Pães e Peixes alimenta mentes e corações com conteúdos que edificam e transformam, espalhando conhecimento e fé.",
+          imagens: [
+          "../img/casa-adolescentes1.jpg",
+          "../img/casa-adolescentes2.jpg",
+          "../img/casa-adolescentes3.jpg",
+          "../img/casa-adolescentes4.jpg"
+        ]
+        },
+        "fabrica-kids": {
+          titulo: "Fábrica de Vencedores Kids",
+          texto: "Um ambiente criativo e cheio de diversão onde as crianças aprendem valores cristãos e desenvolvem seu potencial com fé, coragem e alegria.",
+          imagens: [
+          "../img/casa-adolescentes1.jpg",
+          "../img/casa-adolescentes2.jpg",
+          "../img/casa-adolescentes3.jpg",
+          "../img/casa-adolescentes4.jpg"
+        ]
+        },
+        "mulheres": {
+          titulo: "Mulheres Conectadas",
+          texto: "Um ambiente criativo e cheio de diversão onde as crianças aprendem valores cristãos e desenvolvem seu potencial com fé, coragem e alegria.",
+          imagens: [
+          "../img/casa-adolescentes1.jpg",
+          "../img/casa-adolescentes2.jpg",
+          "../img/casa-adolescentes3.jpg",
+          "../img/casa-adolescentes4.jpg"
+        ]
+        },
+        "homens": {
+          titulo: "Homens de Oração",
+          texto: "Um ambiente criativo e cheio de diversão onde as crianças aprendem valores cristãos e desenvolvem seu potencial com fé, coragem e alegria.",
+          imagens: [
+          "../img/casa-adolescentes1.jpg",
+          "../img/casa-adolescentes2.jpg",
+          "../img/casa-adolescentes3.jpg",
+          "../img/casa-adolescentes4.jpg"
+        ]
+        },
+        "ceape": {
+          titulo: "Ceape São Paulo",
+          texto: "Um ambiente criativo e cheio de diversão onde as crianças aprendem valores cristãos e desenvolvem seu potencial com fé, coragem e alegria.",
+          imagens: [
+          "../img/casa-adolescentes1.jpg",
+          "../img/casa-adolescentes2.jpg",
+          "../img/casa-adolescentes3.jpg",
+          "../img/casa-adolescentes4.jpg"
+        ]
+        },
+        "pac": {
+          titulo: "Posto Avançado de Colportores",
+          texto: "Um ambiente criativo e cheio de diversão onde as crianças aprendem valores cristãos e desenvolvem seu potencial com fé, coragem e alegria.",
+          imagens: [
+          "../img/casa-adolescentes1.jpg",
+          "../img/casa-adolescentes2.jpg",
+          "../img/casa-adolescentes3.jpg",
+          "../img/casa-adolescentes4.jpg"
+        ]
+        },
+        "investidores": {
+          titulo: "Investidores do Reino",
+          texto: "Um ambiente criativo e cheio de diversão onde as crianças aprendem valores cristãos e desenvolvem seu potencial com fé, coragem e alegria.",
+          imagens: [
+          "../img/casa-adolescentes1.jpg",
+          "../img/casa-adolescentes2.jpg",
+          "../img/casa-adolescentes3.jpg",
+          "../img/casa-adolescentes4.jpg"
+        ]
+        },
+        
+      };
+  
+      const dados = conteudos[tool];
+  
+      if (dados) {
+        document.getElementById("titulo").textContent = dados.titulo;
+        document.getElementById("texto").textContent = dados.texto;
+
+        const galeria = document.getElementById("galeria");
+dados.imagens.forEach(item => {
+  const container = document.createElement("div");
+  container.classList.add("item-galeria");
+
+  const img = document.createElement("img");
+  img.src = item.src;
+  img.alt = dados.titulo;
+
+  const descricao = document.createElement("p");
+  descricao.textContent = item.descricao;
+  descricao.classList.add("descricao-imagem");
+
+  container.appendChild(img);
+  container.appendChild(descricao);
+  galeria.appendChild(container);
+});
+      } 
+    </script>
+  </body>
+  </html>

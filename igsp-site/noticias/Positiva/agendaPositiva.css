@@ -1,0 +1,88 @@
+/* AGENDA IGSP */
+body {
+    background-color: #ffffff;
+  }
+  
+  .topo {
+    text-align: center;
+    margin-bottom: 40px;
+  }
+  
+  .topo h1 {
+    font-size: 2.5rem;
+    color: #004080;
+    margin-bottom: 10px;
+  }
+  
+  .subtitulo {
+    font-size: 1.1rem;
+    color: #555;
+  }
+  
+  .agenda-container {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 0 20px;
+  }
+  
+  h2 {
+    margin-top: 50px;
+    margin-bottom: 20px;
+    font-size: 1.8rem;
+    color: #007bff;
+    border-bottom: 2px solid #007bff;
+    padding-bottom: 5px;
+  }
+  
+  ul {
+    padding-left: 0;
+    margin-bottom: 40px;
+  }
+  
+  li {
+    background-color: #f4fafa;
+    margin: 10px 0;
+    padding: 12px 18px;
+    border-left: 4px solid #007bff;
+    border-radius: 6px;
+    font-size: 1rem;
+    line-height: 1.5;
+    transition: transform 0.2s ease;
+  }
+  
+  li:hover {
+    transform: translateX(5px);
+    background-color: #e9f4fb;
+  }
+  
+  footer {
+    text-align: center;
+    padding: 20px 0;
+    margin-top: 60px;
+    font-size: 0.9rem;
+    color: #999;
+    border-top: 1px solid #ddd;
+  }
+  
+  
+  #btnTopo {
+    display: none;
+    position: fixed;
+    bottom: 30px;
+    right: 30px;
+    z-index: 99;
+    font-size: 20px;
+    border: none;
+    outline: none;
+    background-color: #004080;
+    color: white;
+    cursor: pointer;
+    padding: 12px 16px;
+    border-radius: 50%;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.3);
+    transition: background-color 0.3s ease;
+  }
+  
+  #btnTopo:hover {
+    background-color: #0066cc;
+  }
